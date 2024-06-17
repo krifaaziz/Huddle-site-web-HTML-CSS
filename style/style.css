@@ -4,7 +4,7 @@
 }
 /*HEADER*/
 header {
-  background-image: url(images/bg-hero-desktop.svg);
+  background-image: url(/images/bg-hero-desktop.svg);
   background-color: #edfaff;
   background-size: cover;
   background-repeat: no-repeat;
@@ -173,6 +173,7 @@ footer .footer-box .child-footer-box a:hover {
 footer .footer-box .child-footer-box:nth-of-type(4) i {
   color: white;
   margin-right: 10px;
+  margin-bottom: 10px;
   border: solid 0.8px white;
   border-radius: 50%;
   padding: 10px;
@@ -272,6 +273,9 @@ footer .copyright p {
   }
 }
 @media (max-width: 576px) {
+  #logo {
+    width: 50%;
+  }
   header .header button {
     padding: 10px 30px;
   }
@@ -291,10 +295,6 @@ footer .copyright p {
   main .box:nth-of-type(2) {
     flex-direction: column;
   }
-  main .box img {
-    max-width: 40%;
-    margin: auto;
-  }
   main .box .child-box-text .description {
     font-size: 15px;
     max-width: 100%;
@@ -312,6 +312,7 @@ footer .copyright p {
   }
   main .box img {
     max-width: 50%;
+    margin: 0 auto 10px auto;
   }
   main .top-footer {
     max-width: 100%;
@@ -340,12 +341,9 @@ footer .copyright p {
   }
 }
 @media (max-width: 450px) {
-  #logo {
-    width: 45%;
-  }
   main .box img {
     max-width: 60%;
-    margin: auto;
+    margin: 0 auto 10px auto;
   }
   header .landing-page img {
     height: 250px;
@@ -353,7 +351,7 @@ footer .copyright p {
 }
 @media (max-width: 400px) {
   #logo {
-    width: 30%;
+    width: 45%;
   }
   main .top-footer p {
     font-size: 17px;
